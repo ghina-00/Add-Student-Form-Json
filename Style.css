@@ -1,0 +1,219 @@
+/*****  Text style body & h1******/
+body {
+    text-align: right;
+    font-size: 1.1rem;
+    font-family: Times New Roman;
+    text-shadow: 2px 2px 5px grey;
+    color: grey;
+    text-shadow: 2px 2px 5px grey;
+    background-image: url("bgdesert.jpg");
+}
+
+h1 {
+    text-align: center;
+    color:#7d7d7d;
+    
+    text-shadow: 2px 2px 5px #009879;
+}
+/***** /End Text style body & h1/ ******/
+
+
+
+/***** Form Inputs style ******/
+input[type=text], [type=date], [id=programme], [type=tel], select {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman';
+    margin-right: 150px;
+    filter: drop-shadow(2px 2px 2px #009879);
+}
+
+
+input[type="submit"] {
+    width: 16%;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid #009879;
+    border-radius:6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman';
+    margin-right: 350px;
+    margin-top: 20px;
+   background-color: #009879;
+   
+    filter: drop-shadow(3px 3px 3px #7d7d7d);
+}
+
+    input[type="submit"]:hover {
+        background-color: white;
+       border-color: #009879;
+       color:#009879;
+           filter: drop-shadow(3px 3px 3px #009879);
+    }
+
+    input[type="button" ] {
+        margin-right: 180px;
+        border-radius: 6px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        font-size: 0.5rem;
+        font-family: 'Times New Roman';
+        border: 2px solid #ccc;
+        cursor: pointer;
+        filter: drop-shadow(2px 2px 2px #7d7d7d);
+    }
+    
+        input[type="button" ]:hover {
+            background-color: none;
+            border-color: #009879;
+        }
+    
+input#mainCaptcha {
+    width: 40%;
+    margin-right: 155px;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label {
+    text-align: right;
+    margin: 4px;
+    padding-right: 80px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman';
+    padding-right: 100px;
+}
+ td{   text-align: right;
+    margin: 4px;
+    padding-right: 80px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman';
+    padding-right: 100px;
+  
+ }
+select {
+    text-align: left;
+    margin: 4px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-right: 380px;
+}
+
+textarea#WriteJson {
+    margin-right: 350px;
+    font-size: 1.1rem;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+
+input#txtInput {
+    width: 40%;
+    margin-right: 160px;
+}
+.p labelish{font-size: 1.5rem;
+
+}
+/***** /End Form Inputs style/ ******/
+
+
+
+/***** Radio style ******/
+.div {
+    text-align: center;
+}
+
+.floatBlock {
+    margin: 0 3em 0 0;
+}
+
+.labelish {
+    color: #7d7d7d;
+    margin: 0;
+    padding-right: 150px;
+    margin-right: 5px;
+    font-size: 1.1rem;
+}
+p.labelish {
+    padding-right: 150px;
+    height: 0px;
+}
+.Options {
+    border: 2px solid #ccc;
+    display: inline-block;
+    flex-direction: row;
+    text-align: right;
+    margin-right: 50px;
+    
+    filter: drop-shadow(3px 3px 3px #7d7d7d);
+}
+
+#purchaseOrder {
+    margin: 0 0 2em 0;
+}
+
+/***** /End Radio style/ ******/
+
+
+
+/***** Table style ******/
+.table student {
+    font-size: 1em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 2rem;
+    counter-reset: rowNumber;
+    text-align: right;
+    padding-left:500px;
+}
+
+    .table student thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        display: inline-block;
+        border-radius: 1rem;
+        text-align: right;
+    }
+
+    .table student th {
+        padding: 24px 40px;
+        font-style: italic;
+        text-align: right;
+    }
+
+
+    .table student tbody tr td {
+        border-bottom: 1px solid #dddddd;
+        align-content: flex-start;
+    }
+
+    .table student tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .table student body tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+   
+
+    
+/***** /End  Table style/ ******/
+

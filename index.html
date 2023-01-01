@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Style.css">
+    <title> IWB202-S22 Assignment</title>
+  
+   
+</head>
+<body>
+    <!-------------Form Elements---------------------->
+   <form>
+    <h1>إضافة طالب</h1><br>
+    <div>
+       <input type="text" id="user" placeholder="Ghina-220158"  pattern="[A-z]{5}_[0-9]{5}" title=" Ghina_220158 اسم المستخدم يجب أن يكون كالمثال التالي " required/>
+       <label>: اسم المستخدم </label><br />
+
+      <input type="text" id="student" placeholder="مثال  غنى محظية" pattern="[أ-ي\\s]+" title=" اسم المستخدم يجب أن يكون الغة العربية ويمكن أن يحوي فراغات" required/>
+       <label>: اسم البرنامج </label><br />
+
+       <input type="date" id="date"  min="1950-12-31" max="2022-12-31" required/>
+       <label>: تاريخ الولادة  </label><br/>
+     
+       <select name="" id="programme" required>
+        <option  >اختر البرنامج </option>
+        <option value="Bit">Bit</option>
+        <option value="Bait">Bait</option>
+        <option value="Bact">Bact</option>
+        <option value="Bl">Bl</option>
+    </select> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label >: البرنامج  </label><br/>
+    
+
+       <input type="tel" id="mobile" placeholder="+963-9999999"  pattern="[+963]{4}-[0-9]{7}" title="+963-993058019 : أدخل رقم هاتف حقيقي مع رمز النداء  963+ كالمثال الآتي "required/>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<label> الموبايل  </label>
+       <br/>
+       <body onload="Captcha();">
+
+        <table class="tc" align="right">
+
+            <tr>
+                <td style="text-align:right">
+                  :  يرجى ادخال رمز التحقق (كابتشا  )<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" required id="mainCaptcha" readonly size="20" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" id="refresh" value="تحديث" onclick="Captcha();" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="txtInput" placeholder="أدخل رمز التحقق " required />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="Button1" type="button" value="تحقق" required onclick="alert(ValidCaptcha());" />
+                </td>
+            </tr>
+
+        </table>
+       
+
+
+   <br /><br />
+   <br><br><br><br><br><br /><br /><br />
+   
+
+            <input type="button" class="addbutton" onclick="addStudent() " onClick="insertData()" value="اضافة">
+        </div>
+    </form>
+    <!------------- filter select---------------------->
+    <br>
+    <br>
+    <h1>جدول بأسماء الطلاب</h1>
+
+    <br><br>
+    <p class="labelish"> : البرنامج</p>
+    <select id="mylist" onchange="myFunction()" name="البرنامج" value="BAIT">
+        <option value=" ">All</option>
+        <option value="BAIT">BAIT</option>
+        <option value="BIT">BIT</option>
+        <option value="TIC">TIC</option>
+    </select>
+    <br /><br />
+    <p class="labelish"> : الفرز حسب </p>
+    <center>
+        <!------------- Radio---------------------->
+            <label for="prog-num">
+                 <input type="radio" id="r1" name="gender" value="programme" /> البرنامج </label>
+
+            <label for="std-num"> 
+                <input type="radio" id="r2" name="gender" value="name" /> اسم الطالب
+            </label>
+
+            <label for="user-id"> 
+                <input type="radio" id="r3" name="gender"  />رقم المستخدم</label>
+                <div id="abcd"></div>
+    </center>
+    <!------------- Table---------------------->
+ 
+    <br>
+    
+     <br/>
+    <!-------------Convert To Json---------------------->
+<input type="submit" id="converttoJson" value="ConvertToJson" onclick="myJson()" /><br/>
+<textarea id="WriteJson" readonly rows="30" cols="60"></textarea>
+    <script src="myscript.js" type="text/javaScript"></script> 
+</body>
+</html>
